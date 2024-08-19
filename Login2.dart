@@ -34,9 +34,11 @@ class Login2 extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 20.0,right: 20),
                       child: TextFormField(
                         decoration: InputDecoration(
+                          prefixIcon: Icon(Icons.email),
+                          border: OutlineInputBorder(),
                           labelText: "Email",
                           labelStyle: TextStyle(color: Colors.black87),
-                          suffixIcon: Icon(Icons.email),
+                          // suffixIcon: Icon(Icons.email),
                           hintText: "Enter Email",
                           hintStyle: TextStyle(color: Colors.black87,),
                           enabledBorder: OutlineInputBorder(
@@ -64,10 +66,11 @@ class Login2 extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 20.0,right: 20),
                     child: TextFormField(
                       decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.lock),
                           border: OutlineInputBorder(),
                           labelText: "Password",
                           labelStyle: TextStyle(color: Colors.black87),
-                        suffixIcon: Icon(Icons.lock),
+                        // suffixIcon: Icon(Icons.lock),
                           hintText: "Enter Password",
                         hintStyle: TextStyle(color: Colors.black87,),
                         enabledBorder: OutlineInputBorder(
